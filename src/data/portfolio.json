@@ -1,0 +1,40 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/one.png",
+      "title": "MenuAi",
+      "description": "ReactJs, Node.js, OpenAI GPT, JavaScript",
+      "url": "https://menu-ai-brown.vercel.app"
+    },
+
+    {
+      "cover": "/portfolio/two.png",
+      "title": "Weather App",
+      "description": "JavaScript, HTML/CSS",
+      "url": "https://basic-weather-app-project.vercel.app"
+    },
+
+    {
+      "cover": "/portfolio/three.png",
+      "title": "Virtual Music Lounge",
+      "description": "Python, CSV, YouTube API",
+      "url": "https://github.com/bpsingh15/COMP303"
+    }, 
+
+    {
+      "cover": "/portfolio/four.png",
+      "title": "YouTube Clone",
+      "description": "HTML, CSS",
+      "url": "https://bpsingh15.github.io/YouTubeClone/"
+    }, 
+
+    {
+      "cover": "/portfolio/five.png",
+      "title": "Starbucks Clone",
+      "description": "HTML, CSS",
+      "url": "https://bpsingh15.github.io/StarbucksClone/"
+    }
+
+
+  ]
+}
