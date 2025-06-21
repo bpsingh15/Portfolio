@@ -80,43 +80,55 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .home-page {
-    .text-zone {
-      position: static;
-      transform: none;
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
+    .logo-container {
+      width: 400px;
     }
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .home-page {
     h1 {
-      font-size: 32px;
-      line-height: 42px;
-
-      &:before,
-      &:after {
-        display: none;
-      }
-
-      img {
-        margin-left: 10px;
-        width: 40px;
-      }
+      font-size: 40px;
+      justify-content: center;
     }
 
-    h2 {
-      font-size: 10px;
-      letter-spacing: 2px;
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 250px;
+      height: auto;
+      top: 50px;
+      right: 0;
+      box-sizing: border-box;
+      margin: auto;
+      left: 0;
+
+      svg {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+      }
     }
 
     .flat-button {
-      font-size: 11px;
-      letter-spacing: 2px;
-      padding: 8px 14px;
-      margin: 20px auto 0;
       float: none;
-      display: inline-block;
+      display: block;
+      width: 125px;
     }
   }
 }

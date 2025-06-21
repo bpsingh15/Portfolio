@@ -1,22 +1,30 @@
-import './index.scss'
-import { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss, faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faJava } from '@fortawesome/free-brands-svg-icons/faJava'
-import Loader from 'react-loaders'
-
+import "./index.scss";
+import { useEffect, useState } from "react";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngular,
+  faCss,
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import { faJava } from "@fortawesome/free-brands-svg-icons/faJava";
+import Loader from "react-loaders";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
-      const timeout = setTimeout(() => {
-        setLetterClass('text-animate-hover');
-      }, 3000);
-  
-      return () => clearTimeout(timeout);
-    }, []);
+    const timeout = setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <>
@@ -25,7 +33,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={15}
             />
           </h1>
@@ -39,41 +47,41 @@ const About = () => {
             improving my skills one design problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a hardworker, family
-            person, a sports fanatic, and tech-obsessed!
+            If I need to define myself in one sentence that would be a
+            hardworker, family person, a sports fanatic, and tech-obsessed!
           </p>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
-              <div className="face1">
+            <div className="face1">
               <FontAwesomeIcon icon={faPython} color="#ffd700" />
-              </div>
+            </div>
 
-              <div className="face2">
+            <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-              </div>
+            </div>
 
-              <div className="face3">
+            <div className="face3">
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-              </div>
+            </div>
 
-              <div className="face4">
+            <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-              </div>
+            </div>
 
-              <div className="face5">
+            <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-              </div>
+            </div>
 
-              <div className="face6">
+            <div className="face6">
               <FontAwesomeIcon icon={faJava} color="#EC4D28" />
-              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Loader type="pacman"/>
+      <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
