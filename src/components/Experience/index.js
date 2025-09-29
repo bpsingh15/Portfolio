@@ -16,7 +16,7 @@ const Experience = () => {
 
   return (
     <>
-      <div className="container experience-page">
+      <div className="container contact-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
