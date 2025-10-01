@@ -48,7 +48,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        {/*
+        {
           <NavLink
             exact="true"
             activeclassname="active"
@@ -57,7 +57,7 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
           </NavLink>
-        */}
+        }
 
         <NavLink
           activeclassname="active"
