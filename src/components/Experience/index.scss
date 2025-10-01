@@ -1,6 +1,7 @@
+/* ===== Existing styles you had ===== */
 .contact-icon {
-  color: #ffd700; /* Blue color similar to your LinkedIn icon */
-  font-size: 100px; /* Adjust size to match screenshot */
+  color: #ffd700; /* Yellow accent */
+  font-size: 100px;
 }
 
 .title {
@@ -11,8 +12,53 @@
   color: white;
 }
 
+/* ===== Page containers (Contact + Experience) ===== */
+.container.contact-page,
+.container.experience-page {
+  padding-left: 100px;
+  padding-right: 50px;
+  width: calc(100% - 150px);
+
+  /* critical: allow vertical growth + scroll */
+  position: initial; /* not absolute/fixed */
+  min-height: 100vh; /* can extend beyond viewport */
+  height: auto;
+  overflow-y: auto; /* enable vertical scrolling */
+
+  .text-zone {
+    max-width: 720px; /* keeps readable line length */
+  }
+
+  /* nice spacing to match other pages */
+  h1 {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+}
+
+/* Optional: small visual grouping for experience items */
+.experience-list {
+  margin-top: 1rem;
+
+  .exp-item + .exp-item {
+    margin-top: 2rem;
+  }
+
+  .exp-meta {
+    opacity: 0.8;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  ul {
+    margin-left: 1.2rem;
+    list-style: disc;
+  }
+}
+
+/* ===== Responsive ===== */
 @media screen and (max-width: 1200px) {
-  .contact-page {
+  .container.contact-page,
+  .container.experience-page {
     .text-zone {
       position: initial;
       transform: none;
@@ -21,5 +67,19 @@
       padding: 20px;
       box-sizing: border-box;
     }
+
+    h1 {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container.contact-page,
+  .container.experience-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
